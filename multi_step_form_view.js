@@ -2,7 +2,7 @@ define(function() {
   var Multistep_Form_View = Backbone.View.extend({
     inputs: null,
     formSteps: null,
-    breadcrumbs: true,
+    breadcrumbs: null,
 
     events: {
       'change input' : 'updateModelFromInput',
@@ -16,6 +16,7 @@ define(function() {
     initialize: function() {
       this.inputs = this.$el.find('input, select, textarea');
       this.formSteps = this.$el.find('.form-step');
+      this.breadcrumbs = this.$el.find('.breadcrumbs').length ? true : false;
       this.decorateInputs();
       this.buildModelFromForm();
       this.buildBreadcrumbs();
