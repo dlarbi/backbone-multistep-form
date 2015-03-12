@@ -10,9 +10,7 @@ define(function() {
       'click .next': 'nextStep',
       'click .prev': 'prevStep',
       'click #submit': 'submitForm',
-      'click .crumb': 'followCrumb',
-      'click .taken_course_before': 'allowUserLogin',
-      'click #login-user': 'prefillValuesFromUserLogin'
+      'click .crumb': 'followCrumb'
     },
 
     initialize: function() {
