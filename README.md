@@ -1,8 +1,6 @@
 # backbone-multistep-form
 A multi-step form for backbone js.
 ####Usage:
-
-There are only a few things to include in your HTML
 #####Wrap your sections in:
     <div class="form-step" data-step=""></div>.
 #####Make next and previous buttons like
