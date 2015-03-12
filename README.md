@@ -10,8 +10,11 @@ A multi-step form for backbone js.
     <div id="submit">Submit</div>
 #####You can add validation by including parsley, and using, ie
     <input type="text" name="" data-parsley-required="true"/>
+#####You can add breadcrumbs by including an empty div with class .breadcrumbs
+    <div class="breadcrumbs"></div>
 #####This form is automatically wired up with validation, breadcrumbs, etc, ie
     <form id="multi-step-form">
+      <div class="breadcrumbs"></div>
       <div class="form-step" data-step="1">
         <input type="text" name="first_name" data-parsley-required="true"/>
       </div>
