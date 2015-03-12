@@ -11,7 +11,7 @@ There are only a few things to include in your HTML
 #####Create a button with id=submit
     <div id="submit">Submit</div>
 #####You can add validation by including parsley, and using, ie
-   <input type="text" name="" data-parsley-required="true"/>
+    <input type="text" name="" data-parsley-required="true"/>
 #####This should wire up your steps automagically, ie
     <form id="multi-step-form">
       <div class="form-step" data-step="1">
