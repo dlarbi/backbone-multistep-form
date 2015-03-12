@@ -13,7 +13,7 @@ A multi-step form for backbone js.
 #####This form is automatically wired up with validation, breadcrumbs, etc, ie
     <form id="multi-step-form">
       <div class="form-step" data-step="1">
-        <input type="text" name="first_name"/>
+        <input type="text" name="first_name" data-parsley-required="true"/>
       </div>
       
       <div class="form-step" data-step="2">
