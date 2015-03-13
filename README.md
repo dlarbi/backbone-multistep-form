@@ -1,18 +1,6 @@
 # backbone-multistep-form
 A multi-step form for backbone js.
-####Usage:
-#####Wrap your sections in:
-    <div class="form-step" data-step=""></div>.
-#####Make next and previous buttons like
-    <div class="prev">Previous</div>
-    <div class="next">Next</div>
-#####Create a button with id=submit
-    <div id="submit">Submit</div>
-#####You can add validation by including parsley, and using, ie
-    <input type="text" name="" data-parsley-required="true"/>
-#####You can add breadcrumbs by including an empty div with class .breadcrumbs
-    <div class="breadcrumbs"></div>
-#####This form is automatically wired up with validation, breadcrumbs, etc, ie
+#####This form is automatically wired up with with multiple steps, breadcrumbs, and validation that makes sense.
     <form id="multi-step-form">
       <div class="breadcrumbs"></div>
       <div class="form-step" data-step="1">
@@ -40,3 +28,16 @@ A multi-step form for backbone js.
       <div class="prev">Previous</div>
       <div class="next">Next</div>
     </form>
+
+####Usage:
+#####Wrap your steps in:
+    <div class="form-step" data-step=""></div>.
+#####Make next and previous buttons with the .next and .prev class
+    <div class="prev">Previous</div>
+    <div class="next">Next</div>
+#####Create a button with #submit id
+    <div id="submit">Submit</div>
+#####You can add validation by including parsley in your project, and using its standard DOM API
+    <input type="text" name="" data-parsley-required="true"/>
+#####You can add breadcrumbs by including an empty div with class .breadcrumbs
+    <div class="breadcrumbs"></div>
